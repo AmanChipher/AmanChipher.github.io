@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0b0b">
+<meta name="description" content="Aman Chipher - Creative Digital Creator, Video Editor, Web Creator and Coder.">
+<title>Aman Chipher | Creative Digital Creator</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#0b0b0b;color:#f5f5f5;font-family:Arial,sans-serif}
+:root{--gold:#f5a623;--muted:#aaa}
+header{height:75px;display:flex;align-items:center;justify-content:space-between;padding:0 7%;border-bottom:1px solid #252525;position:sticky;top:0;background:#0b0b0bee;backdrop-filter:blur(12px);z-index:10}
+.logo{font-size:21px;font-weight:800;letter-spacing:1px}
+.logo span{color:var(--gold)}
+nav{display:flex;gap:25px}
+nav a{color:#ddd;text-decoration:none;font-size:13px}
+nav a:hover{color:var(--gold)}
+.menu{display:none;background:none;color:white;border:0;font-size:26px}
+.hero{min-height:85vh;display:flex;align-items:center;padding:80px 9%;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:350px;height:350px;background:#f5a62318;filter:blur(100px);right:5%;top:20%}
+.hero-content{position:relative;max-width:800px}
+.tag{color:var(--gold);font-size:13px;letter-spacing:4px;margin-bottom:25px}
+h1{font-size:clamp(48px,10vw,105px);line-height:.98;letter-spacing:-5px}
+h1 span{color:var(--gold)}
+.hero p{color:#aaa;line-height:1.8;max-width:560px;margin:28px 0;font-size:16px}
+.btn{display:inline-block;background:var(--gold);color:#111;text-decoration:none;padding:15px 25px;border-radius:4px;font-weight:bold;font-size:13px}
+.btn.outline{background:transparent;color:white;border:1px solid #555;margin-left:10px}
+section{padding:90px 9%}
+.section-tag{font-size:12px;letter-spacing:3px;color:var(--gold);margin-bottom:15px}
+h2{font-size:clamp(32px,6vw,55px);letter-spacing:-2px;margin-bottom:35px}
+.about{display:grid;grid-template-columns:1fr 1.2fr;gap:50px;align-items:center;background:#101010}
+.about-card{min-height:270px;border:1px solid #343434;border-radius:8px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,#282017,#101010 70%);font-size:65px;font-weight:900;color:var(--gold)}
+.about p,.project p{color:var(--muted);line-height:1.9;font-size:15px}
+.skills{display:flex;flex-wrap:wrap;gap:12px}
+.skill{border:1px solid #333;padding:16px 20px;border-radius:5px;color:#ddd;background:#111;font-size:14px}
+.skill:hover{border-color:var(--gold);color:var(--gold)}
+.projects{background:#101010}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.project{border:1px solid #303030;border-radius:7px;padding:28px;background:#141414;transition:.3s}
+.project:hover{transform:translateY(-5px);border-color:var(--gold)}
+.project .num{color:var(--gold);font-size:12px;letter-spacing:2px;margin-bottom:22px}
+.project h3{font-size:22px;margin-bottom:12px}
+.contact{text-align:center}
+.contact p{color:var(--muted);line-height:1.8;margin:0 auto 25px;max-width:500px}
+footer{border-top:1px solid #292929;padding:25px 7%;display:flex;justify-content:space-between;gap:15px;color:#888;font-size:12px}
+footer span{color:var(--gold)}
+@media(max-width:650px){
+ header{height:65px;padding:0 5%}
+ .menu{display:block}
+ nav{display:none;position:absolute;top:64px;left:0;width:100%;padding:22px;background:#111;flex-direction:column;gap:20px;border-bottom:1px solid #333}
+ nav.open{display:flex}
+ .hero{min-height:78vh;padding:65px 7%}
+ h1{letter-spacing:-3px}
+ section{padding:70px 7%}
+ .about{grid-template-columns:1fr;gap:25px}
+ .about-card{min-height:190px}
+ .project-grid{grid-template-columns:1fr}
+ footer{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">AMAN <span>CHIPHER.</span></div>
+  <button class="menu" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="tag">CREATIVE DIGITAL CREATOR</div>
+    <h1>AMAN<br><span>CHIPHER.</span></h1>
+    <p>I'm a creative digital creator, video editor, web creator and coder. I turn ideas into digital experiences through creativity and technology.</p>
+    <a class="btn" href="#projects">EXPLORE MY WORK ↗</a>
+    <a class="btn outline" href="#contact">CONTACT ME</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div>
+    <div class="section-tag">01 / ABOUT ME</div>
+    <h2>Behind The<br>Creation.</h2>
+    <div class="about-card">AC.</div>
+  </div>
+  <div>
+    <p>I'm Aman Chipher, a creative digital creator from India with an interest in technology, design, video editing and web development.</p>
+    <br>
+    <p>I enjoy learning new tools, building digital projects and transforming creative ideas into reality. This is my personal space to showcase my work and journey.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-tag">02 / WHAT I DO</div>
+  <h2>Skills & Expertise.</h2>
+  <div class="skills">
+    <div class="skill">HTML5</div>
+    <div class="skill">CSS3</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Web Design</div>
+    <div class="skill">Video Editing</div>
+    <div class="skill">Creative Design</div>
+    <div class="skill">Android Apps</div>
+    <div class="skill">AI Tools</div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="section-tag">03 / SELECTED WORK</div>
+  <h2>My Projects.</h2>
+  <div class="project-grid">
+    <article class="project">
+      <div class="num">PROJECT 01</div>
+      <h3>AmanChipher Hub</h3>
+      <p>A collection of useful digital tools and web utilities.</p>
+    </article>
+    <article class="project">
+      <div class="num">PROJECT 02</div>
+      <h3>NovaKart</h3>
+      <p>An e-commerce app concept for browsing products and placing orders.</p>
+    </article>
+    <article class="project">
+      <div class="num">PROJECT 03</div>
+      <h3>Private Calculator</h3>
+      <p>An Android calculator project with a private photo vault concept.</p>
+    </article>
+    <article class="project">
+      <div class="num">PROJECT 04</div>
+      <h3>Creative Editing</h3>
+      <p>Creative video editing, visual storytelling and digital content.</p>
+    </article>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-tag">04 / GET IN TOUCH</div>
+  <h2>Let's Connect.</h2>
+  <p>Have a project, idea or collaboration in mind? Feel free to connect with me.</p>
+  <a class="btn" href="mailto:YOUR_EMAIL@gmail.com">EMAIL ME ↗</a>
+  <a class="btn outline" href="https://github.com/AmanChipher">GITHUB ↗</a>
+</section>
+</main>
+
+<footer>
+  <div>© 2026 <span>AMAN CHIPHER</span>. All rights reserved.</div>
+  <div>Designed with creativity & code.</div>
+</footer>
+<script>
+document.querySelectorAll('nav a').forEach(link=>{
+  link.addEventListener('click',()=>{
+    document.querySelector('nav').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
